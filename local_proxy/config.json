@@ -18,14 +18,18 @@
   "startup": "application",
   "boot": "auto",
   "options": {
-    "local_host" : "device",
-    "local_port" : "443",
+    "panel_title" : "Local Proxy",
+    "panel_icon" : "mdi:page-next-outline",
+    "local_host" : null,
+    "local_port" : null,
     "ssl": {
       "enabled": true,
       "verify": false
     }
   },
   "schema": {
+    "panel_title" : "str",
+    "panel_icon" : "str",
     "local_host" : "str",
     "local_port" : "port",
     "ssl": {
