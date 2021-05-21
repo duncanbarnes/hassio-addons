@@ -1,0 +1,35 @@
+{
+  "name": "Local Proxy",
+  "version": "1.0.0",
+  "slug": "local_proxy",
+  "description": "Access local device from within Home Assistant",
+  "url": "https://github.com/duncanbarnes/hassio-addons/",
+  "ingress": true,
+  "ingress_port": 80,
+  "arch": [
+    "armhf",
+    "armv7",
+    "aarch64",
+    "amd64",
+    "i386"
+  ],
+  "startup": "application",
+  "boot": "auto",
+  "options": {
+    "local_host" : "octopi",
+    "local_port" : "443",
+    "ssl": {
+      "enabled": true,
+      "verify": false
+    }
+  },
+  "schema": {
+    "local_host" : "str",
+    "local_port" : "port",
+    "ssl": {
+      "enabled": "bool",
+      "verify": "bool"
+    }
+  },
+  "hassio_api": false
+}
