@@ -15,6 +15,7 @@ arch:
 - i386
 startup: application
 boot: auto
+init: false
 options:
   local_host: null
   local_port: null
