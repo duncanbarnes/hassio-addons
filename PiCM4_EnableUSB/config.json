@@ -1,0 +1,17 @@
+{
+  "name": "PiCM4_EnableUSB",
+  "version": "0.1a",
+  "slug": "picm4_enableusb",
+  "description": "Enable the USB ports on a Pi CM4 module, they are disabled by default, you can uninstall once complete",
+  "arch": ["armhf", "armv7", "aarch64"],
+  "startup": "once",
+  "init": false,
+  "url":"https://github.com/duncanbarnes/hassio-addons/",
+  "stage": "experimental",
+  "privileged": ["SYS_ADMIN"],
+  "ingress": true,
+  "full_access": true,
+  "boot": "manual",
+  "options": {},
+  "schema": {}
+}
