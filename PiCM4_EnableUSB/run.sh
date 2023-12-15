@@ -13,7 +13,10 @@ set +e
     while true; do sleep 99999; done;
 
   fi;
-
+  echo "Listing root"
+  ls -la /
+  echo "Listing boot"
+  ls -la /boot
 
   performWork () {
     partition=$1
