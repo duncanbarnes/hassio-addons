@@ -14,9 +14,9 @@ set +e
 
   fi;
   echo "Listing root"
-  ls -la /
+  ls /
   echo "Listing dev"
-  ls -la /dev
+  ls /dev
 
   performWork () {
     partition=$1
