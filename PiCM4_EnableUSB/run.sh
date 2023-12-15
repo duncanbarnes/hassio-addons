@@ -14,9 +14,9 @@ set +e
 
   fi;
   echo "Listing root"
-  ls /
+  ls /  | xargs
   echo "Listing dev"
-  ls /dev
+  ls /dev  | xargs
 
   performWork () {
     partition=$1
