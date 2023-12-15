@@ -18,6 +18,11 @@ set +e
   performWork () {
     partition=$1
     mount /dev/$partition /tmp/$partition 2>/dev/null
+	echo "==============================================="
+	echo "Contents of partition $partition"
+	ls -la /tmp/$partition
+	echo "Status of mount"
+	mount
     if [ -e /tmp/$partition/config.txt ]; then
       if [ $(grep "$config" /tmp/$partition/config.txt|grep -v \#) ]; then
         echo "USB already enabled on $partition";
