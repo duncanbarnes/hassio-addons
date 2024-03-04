@@ -1,0 +1,17 @@
+{
+  "name": "PiCM4_EnableUART3",
+  "version": "0.1.3.2a",
+  "slug": "picm4_enableuart3",
+  "description": "Enable the UART3 port on a Waveshare Compute Module 4 PoE Board (B), it is disabled by default, you can uninstall once complete",
+  "arch": ["armhf", "armv7", "aarch64"],
+  "startup": "once",
+  "init": false,
+  "url":"https://github.com/duncanbarnes/hassio-addons/",
+  "stage": "experimental",
+  "privileged": ["SYS_ADMIN"],
+  "ingress": true,
+  "full_access": true,
+  "boot": "manual",
+  "options": {},
+  "schema": {}
+}
